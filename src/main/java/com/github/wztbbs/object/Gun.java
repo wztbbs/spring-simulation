@@ -1,7 +1,7 @@
 package com.github.wztbbs.object;
 
 /**
- * Created by nhn on 2016/1/11.
+ * Created by wztbbs on 2016/1/11.
  */
 public class Gun implements Shoutable{
 

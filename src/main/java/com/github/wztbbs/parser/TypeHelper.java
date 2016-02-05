@@ -4,7 +4,7 @@ package com.github.wztbbs.parser;
 import java.lang.reflect.InvocationTargetException;
 
 /**
- * Created by nhn on 2016/1/12.
+ * Created by wztbbs on 2016/1/12.
  */
 public class TypeHelper {
 

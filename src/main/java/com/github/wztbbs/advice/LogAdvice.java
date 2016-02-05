@@ -1,7 +1,7 @@
 package com.github.wztbbs.advice;
 
 /**
- * Created by nhn on 2016/1/12.
+ * Created by wztbbs on 2016/1/12.
  */
 public class LogAdvice implements Advice {
     @Override

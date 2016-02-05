@@ -9,7 +9,7 @@ import java.lang.reflect.Proxy;
 import java.util.*;
 
 /**
- * Created by nhn on 2016/1/12.
+ * Created by wztbbs on 2016/1/12.
  */
 public class ProxyBeanHandler implements InvocationHandler {
 

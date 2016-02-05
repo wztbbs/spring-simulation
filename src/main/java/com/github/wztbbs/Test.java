@@ -6,7 +6,7 @@ import com.github.wztbbs.parser.BeanParser;
 import java.io.InputStream;
 
 /**
- * Created by nhn on 2016/1/11.
+ * Created by wztbbs on 2016/1/11.
  */
 public class Test {
 

@@ -1,7 +1,7 @@
 package com.github.wztbbs.object;
 
 /**
- * Created by nhn on 2016/1/12.
+ * Created by wztbbs on 2016/1/12.
  */
 public interface Shoutable {
 
