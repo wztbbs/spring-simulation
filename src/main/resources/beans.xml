@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+	<bean id="user" class="com.github.wztbbs.object.User">
+		<property name="userName" value="userName" />
+		<property name="password" value="password" />
+	</bean>
+	
+	<bean id="teacher" class="com.github.wztbbs.object.Teacher" >
+		<constructor-arg type="java.lang.String" value="userName" />
+		<constructor-arg type="java.lang.String" value="password" />
+		<property name="user" ref="user" />
+	</bean>
+	
+	<bean id="gun" class="com.github.wztbbs.object.Gun" />
+	
+	<bean id="demoAdviceBean" class="com.github.wztbbs.advice.DemoAdvice" />
+
+    <bean id="logAdviceBean" class="com.github.wztbbs.advice.LogAdvice" />
+
+	<aop-config>
+
+        <!-- 定义切面 -->
+        <aspect ref="logAdviceBean">
+            <!-- 定义切点 -->
+            <pointcut expression=".*.shout" />
+            <!-- 定义各类增强 -->
+            <before method="before" />
+            <around method="around" />
+            <after method="after" />
+        </aspect>
+
+        <!-- 定义切面 -->
+        <aspect ref="demoAdviceBean">
+            <!-- 定义切点 -->
+            <pointcut expression=".*.shout" />
+            <!-- 定义各类增强 -->
+            <before method="before" />
+            <around method="around" />
+            <after method="after" />
+        </aspect>
+
+    </aop-config>
+    
+</beans>
